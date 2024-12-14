@@ -13,3 +13,7 @@ function sum(a){
     }
 }
 
+const x = sum(10);
+console.log(x(12,13));
+console.log(x(12,34))
+
