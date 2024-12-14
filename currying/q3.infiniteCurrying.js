@@ -35,3 +35,20 @@ function multiply(a) {
 
 
 console.log(multiply(1)(2)(3)(4)(5)(6)(7)(8)(9)(10)(11)(12)(13)(14)(15)(16)(17)(18)(19)(20)());
+
+/*
+
+cars24 2nd q
+EVALUATE sum(1)(2)(3)(4)(5)(6)()
+*/
+
+
+function sum(a) {
+    return function (b) {
+        if (b) return sum(a + b);
+        return a
+
+    }
+}
+
+console.log("The Required Sum Is :"+ sum(1)(2)(3)(4)(5)(6)());
